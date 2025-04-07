@@ -1,0 +1,38 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+  </head>
+
+
+
+  <body>
+
+
+    <header>
+      <h1>Akil's Code Library</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>© 2025 Akil's Code Library</p>
+    </footer>
+
+
+  </body>
+
+  
+</html>
